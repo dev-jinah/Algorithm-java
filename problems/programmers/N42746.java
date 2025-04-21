@@ -8,6 +8,14 @@ import java.util.Arrays;
  */
 public class N42746 {
     public String solution(int[] numbers) {
+        // 정렬된 배열을 이어붙여 최종 결과 생성
+        StringBuilder answer = new StringBuilder();
+
+        // 예외 처리: null이거나 비어 있는 배열인 경우 0 반환
+        if (numbers == null || numbers.length == 0) {
+            return answer.toString();
+        }
+
         // 정수를 문자열 배열로 변환
         String[] arr = new String[numbers.length];
 
@@ -24,13 +32,9 @@ public class N42746 {
            return "0";
         }
 
-        // 정렬된 배열을 이어붙여 최종 결과 생성
-        StringBuilder answer = new StringBuilder();
-
         for (int i = 0; i < arr.length; i++) {
             answer.append(arr[i]);
         }
-
 
         return answer.toString();
     }
