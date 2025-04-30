@@ -10,7 +10,6 @@ import java.util.HashSet;
  * - 종류가 최대한 다양해야 하므로 중복 제거(set)를 사용.
  * - set의 크기와 N/2 중 작은 값이 정답.
  */
-
 public class N1845 {
     public static int solution(int[] nums) {
 
